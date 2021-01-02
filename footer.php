@@ -6,23 +6,23 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package _s
+ * @package My_WP_Theme_Boilerplate
  */
 
 ?>
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', '_s' ) ); ?>">
+			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'my_wp_theme_boilerplate' ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', '_s' ), 'WordPress' );
+				printf( esc_html__( 'Proudly powered by %s', 'my_wp_theme_boilerplate' ), 'WordPress' );
 				?>
 			</a>
 			<span class="sep"> | </span>
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', '_s' ), '_s', '<a href="https://automattic.com/">Automattic</a>' );
+				printf( esc_html__( 'Theme: %1$s by %2$s.', 'my_wp_theme_boilerplate' ), 'My WP Theme Boilerplate', '<a href="https://wp-service-berlin.de/">David Stingl</a>' );
 				?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
