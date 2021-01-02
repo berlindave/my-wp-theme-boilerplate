@@ -181,11 +181,11 @@ if ( ! function_exists( 'my_wp_theme_boilerplate_woocommerce_cart_link' ) ) {
 	 */
 	function my_wp_theme_boilerplate_woocommerce_cart_link() {
 		?>
-		<a class="cart-contents" href="<?php echo esc_url( wc_get_cart_url() ); ?>" title="<?php esc_attr_e( 'View your shopping cart', 'my_wp_theme_boilerplate' ); ?>">
+		<a class="cart-contents" href="<?php echo esc_url( wc_get_cart_url() ); ?>" title="<?php esc_attr_e( 'View your shopping cart', 'my-wp-theme-boilerplate' ); ?>">
 			<?php
 			$item_count_text = sprintf(
 				/* translators: number of items in the mini cart. */
-				_n( '%d item', '%d items', WC()->cart->get_cart_contents_count(), 'my_wp_theme_boilerplate' ),
+				_n( '%d item', '%d items', WC()->cart->get_cart_contents_count(), 'my-wp-theme-boilerplate' ),
 				WC()->cart->get_cart_contents_count()
 			);
 			?>

@@ -25,9 +25,9 @@ if ( ! function_exists( 'my_wp_theme_boilerplate_setup' ) ) :
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
 		 * If you're building a theme based on My_WP_Theme_Boilerplate, use a find and replace
-		 * to change 'my_wp_theme_boilerplate' to the name of your theme in all the template files.
+		 * to change 'my-wp-theme-boilerplate' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'my_wp_theme_boilerplate', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'my-wp-theme-boilerplate', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -50,7 +50,7 @@ if ( ! function_exists( 'my_wp_theme_boilerplate_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
-				'menu-1' => esc_html__( 'Primary', 'my_wp_theme_boilerplate' ),
+				'menu-1' => esc_html__( 'Primary', 'my-wp-theme-boilerplate' ),
 			)
 		);
 
@@ -124,9 +124,9 @@ add_action( 'after_setup_theme', 'my_wp_theme_boilerplate_content_width', 0 );
 function my_wp_theme_boilerplate_widgets_init() {
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar', 'my_wp_theme_boilerplate' ),
+			'name'          => esc_html__( 'Sidebar', 'my-wp-theme-boilerplate' ),
 			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Add widgets here.', 'my_wp_theme_boilerplate' ),
+			'description'   => esc_html__( 'Add widgets here.', 'my-wp-theme-boilerplate' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
