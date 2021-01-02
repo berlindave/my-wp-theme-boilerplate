@@ -140,10 +140,14 @@ add_action( 'widgets_init', 'my_wp_theme_boilerplate_widgets_init' );
  * Enqueue scripts and styles.
  */
 function my_wp_theme_boilerplate_scripts() {
-	wp_enqueue_style( 'my-wp-theme-boilerplate-style', get_stylesheet_uri(), array(), MY_WP_THEME_BOILERPLATE_VERSION );
+	wp_enqueue_style( 'my-wp-theme-boilerplate-style', get_template_directory_uri() . '/assets/css/main.css', array(), MY_WP_THEME_BOILERPLATE_VERSION );
 	wp_style_add_data( 'my-wp-theme-boilerplate-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'my-wp-theme-boilerplate-navigation', get_template_directory_uri() . '/js/navigation.js', array(), MY_WP_THEME_BOILERPLATE_VERSION, true );
+	wp_enqueue_script( 'my-wp-theme-boilerplate-navigation', get_template_directory_uri() . 'assets/js/navigation.js', array(), MY_WP_THEME_BOILERPLATE_VERSION, true );
+
+	wp_enqueue_script( 'my-wp-theme-boilerplate-vendor', get_template_directory_uri() . 'assets/js/vendor.min.js', array(), MY_WP_THEME_BOILERPLATE_VERSION, true );
+
+	wp_enqueue_script( 'my-wp-theme-boilerplate-custom', get_template_directory_uri() . 'assets/js/custom.min.js', array(), MY_WP_THEME_BOILERPLATE_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
