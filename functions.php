@@ -9,7 +9,7 @@
 
 if ( ! defined( 'MY_WP_THEME_BOILERPLATE_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( 'MY_WP_THEME_BOILERPLATE_VERSION', '1.0.0' );
+	define( 'MY_WP_THEME_BOILERPLATE_VERSION', wp_get_theme()->Version );
 }
 
 if ( ! function_exists( 'my_wp_theme_boilerplate_setup' ) ) :

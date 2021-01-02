@@ -4,7 +4,7 @@ Theme URI: https://github.com/berlindave/my-wp-theme-boilerplate
 Author: David Stingl
 Author URI: https://wp-service-berlin.de/
 Description: WP Theme Boilerplate meant as a starting point for WP theme development.
-Version: 0.1.4
+Version: 0.1.5
 Tested up to: 5.5
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
@@ -51,7 +51,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 --------------------------------------------------------------*/
 
 // Import variables and mixins.
-@import "abstracts/abstracts";
+@import "underscores-sass/abstracts/abstracts";
 
 /*--------------------------------------------------------------
 # Generic
@@ -59,27 +59,27 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 /* Normalize
 --------------------------------------------- */
-@import "generic/normalize";
+@import "underscores-sass/generic/normalize";
 
 /* Box sizing
 --------------------------------------------- */
-@import "generic/box-sizing";
+@import "underscores-sass/generic/box-sizing";
 
 /*--------------------------------------------------------------
 # Base
 --------------------------------------------------------------*/
-@import "base/base";
+@import "underscores-sass/base/base";
 
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
-// @import "layouts/content-sidebar"; // Uncomment this line for a sidebar on right side of your content.
-// @import "layouts/sidebar-content"; // Uncomment this line for a sidebar on left side of your content.
+// @import "underscores-sass/layouts/content-sidebar"; // Uncomment this line for a sidebar on right side of your content.
+// @import "underscores-sass/layouts/sidebar-content"; // Uncomment this line for a sidebar on left side of your content.
 
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
-@import "components/components";
+@import "underscores-sass/components/components";
 
 /*--------------------------------------------------------------
 # Plugins
@@ -87,7 +87,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 /* Jetpack infinite scroll
 --------------------------------------------- */
-@import "plugins/jetpack/infinite-scroll";
+@import "underscores-sass/plugins/jetpack/infinite-scroll";
 
 /*--------------------------------------------------------------
 # Utilities
@@ -95,8 +95,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 /* Accessibility
 --------------------------------------------- */
-@import "utilities/accessibility";
+@import "underscores-sass/utilities/accessibility";
 
 /* Alignments
 --------------------------------------------- */
-@import "utilities/alignments";
+@import "underscores-sass/utilities/alignments";
