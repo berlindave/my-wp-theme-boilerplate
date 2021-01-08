@@ -40,7 +40,18 @@ Open your project (WordPress theme) folder and run the installation.
 npm install
 ```
 
-#### 4. More Scripts/Tasks (optional step) 
+#### 4. Start your project
+
+Once the installation is done, you can run the start script within your project (WordPress theme) folder.
+
+```sh
+npm start
+
+# To stop press CTRL (⌃) + C
+```
+
+
+#### 5. More Scripts/Tasks (optional step) 
 
 To optimize images and generate WP POT translation file, or generate a RTL stylesheet you can run the following commands
 
